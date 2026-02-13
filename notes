@@ -1,0 +1,8 @@
+insmod led_driver.ko
+echo "on" > /dev/led_driver
+echo "off" > /dev/led_driver
+echo "interval 1" > /dev/led_driver
+
+
+echo "1;5" > /dev/led_driver
+cat /dev/led_driver
